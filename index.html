@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign board </title>
+ <link rel="stylesheet" href="Sign board.css">
+ <style>
+    .{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background: #e2dada;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.banner {
+    max-width: 900px;
+    width: 100%;
+    background: linear-gradient(180deg, #534881, #7a1976, rgb(142, 184, 79));
+    color: #fff;
+    border: 4px solid rgb(202, 6, 241);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(240, 3, 3);
+}
+
+*/* HEADER*/
+.header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: -30px;
+
+}
+
+.header h2 {
+    letter-spacing: 5px;
+    margin-top: -15px;
+    font-size: 1.4rem;
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 750px;
+    margin-bottom: -100px;
+
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    margin-top: -10px;
+    letter-spacing: 2px;
+
+} 
+
+.header .brand {
+    color: #edf102;
+
+}
+
+.header .print {
+    color: #1aff8c;
+}
+
+/*WHAT WE DO*/
+.what-we-do {
+    padding: 15px;
+    margin-top: -60px;
+ 
+}
+
+.badge {
+    background: #fff;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-left: 310px;
+
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    
+
+    
+    
+}
+
+.card {
+    background: #fff;
+    color: #222;
+    border-radius: 15px;
+    padding: 1px;
+    
+}
+
+.card h3 {
+    text-align: center;
+    color: red;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.card ul {
+    list-style: square; 
+    margin: 2px;
+    gap: 4px;
+    
+}
+
+.card ol {
+    font-size: 1rem;
+}
+
+.card ol li ul {
+    font-size: 0.4rem;
+}
+
+.card li {
+    padding: 10px 0;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1;
+
+}
+
+    /*ADDITIONAL SERVICES*/
+    .additional {
+        margin: 20px;
+        background: #f5eaea;
+        color: #0a0a0a;
+        border-radius: 15px;
+        padding: 7px;
+        margin-top: -5px
+       
+    }
+    .additional h3 {
+        text-align: center;
+        color: red;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 1;
+        margin-top: -3px;
+        font-size: 1.4rem;
+
+    }
+
+    .additional-grid {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+     
+    .additional ul {
+        list-style: circle;
+        columns: 3;
+        margin: 2px;
+
+    }
+
+    .additional li {
+        padding: 3px 0;
+        font-weight: 600;
+        font-size: 1.1rem;
+
+    }
+
+    /*SLOGAN*/
+    .slogan {
+        background: #1120e6;
+        columns: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        padding: 10px;
+        margin-top: -15px;
+        letter-spacing: 3px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica;
+
+    }
+
+    /*FOOTER*/
+    .footer {
+        background: #fff;
+        color: #eb11eb;
+        text-align: center;
+        padding: 1px;
+
+    }
+    .footer p {
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+
+    .footer p{
+        margin-top: 7px;
+    }
+
+    .contact {
+        display: flex;
+        gap: 10px;
+        font-weight: bold;
+    }
+
+   .contact img {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+   }
+ </style>
+</head>
+  <body>
+
+    <div class="banner">
+        <!--Header-->
+        <header class="header">
+        <img src="Tech.uncle logo.jpg">
+        <h1>TECH.UNCLE TRAINING CENTER</h1>
+        <h2>COMPUTER INSTITUTION</h2>
+        <p>
+            <span>MOTTO: THE EXPERT</span>
+            <span class="brand">TODAY WAS ONCE</span>
+            <span class="print">A BEGINNER!</span>
+        </p>
+        </header>
+        
+       <!--WHAT WE DO-->
+       <section class="what-we-do">
+       <div class="badge">WHAT WE DO</div>
+
+       <div class="services">
+        <!--WE PRNT ON-->
+        <div class="card">
+        <h3>WE TEACH</h3>
+        <ol>
+            <li>Introduction to computer</li>
+        <ul>
+            <li>Basic computer skills</li>
+            <li>File transfer skills</li>
+            <li>Advavce Computer shortcuts</li>
+        </ul>
+    </li>
+            <li>Microsoft Office</li>
+        <ul>
+            <li>Ms Word</li>
+            <li>Ms Excel</li>
+            <li>Ms PowerPoint</li>
+            <li>Ms Access</li>
+            <li>Ms Publisher</li> 
+        </ul>
+        </li>
+        <li>Graphics Design with:</li>
+        <ul>
+            <li>Photoshop</li>
+            <li>CorelDRAW</li>
+            <li>Adobe illustrator</li>
+            </li>
+        </ol>
+        </div>
+
+        <!--WE DESIGN & PRODUCE-->
+        <div class="card">
+        <h3>WE DESIGN & PRODUCE</h3>
+
+        <ol>
+            <li>Graphics</li>
+        <ul>
+            <li>Flyers</li>
+            <li>Logo</li>
+            <li>Invitation Card</li>
+            <li>Birthday Card</li>
+            <li>Booklets</li>
+            <li>Picture Editing</li>
+        </li>
+        </ul>
+    </li>
+            <li>File transfer</li>
+        <ul>
+            <li>All types of music</li>
+            <li>Video/Movies</li>
+            <li>Advavce Computer shortcuts</li>
+        </ul>
+        </li>
+        <li>Internet and Email Use</li>
+         <ul>
+         <li>Gmail</li>
+         <li>Google Meet</li>
+        </ol>
+        </ul>
+
+        </div>
+       </div>
+       </section>
+       
+       <!--ADDITIONAL SERVICES-->
+       <section class="additional">
+        <h3>ADDITIONAL SERVICES</h3>
+        <div class="addition-grid">
+            <ul>
+                <li>Website Development (Basics)</li>
+                <li>Typing and Editing Documents</li>
+                <li>Photocopy</li>
+            </ul>
+            <ul>
+                <li>Scanning</li>
+                <li>Printing (Black & white and color)</li>
+                <li>Plastification</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--SLOGAN-->
+    <div class="slogan">
+    "WE FOCUS MORE ON PRACTICALS AND TUTORIAL VIDEOS"
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <p>CONTACT US</p>
+        <div class="contact">
+     <img src="Social icons.jpg">
+        </div>
+    </footer>   
+</div>
+  </body>
+</html>
+   
